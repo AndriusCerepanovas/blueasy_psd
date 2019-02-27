@@ -617,20 +617,21 @@ header {
   transition: all 0.3s ease-in-out;
 }
 
+.footer__item:hover,
+.footer__copy:hover {
+  color: #4bcaff;
+}
+
 .footer__item:before,
 .footer__copy:before {
   content: '|';
   position: absolute;
   right: calc(-12px - 4px);
+  color: #515f67;
 }
 
 .footer__item:last-child:before,
 .footer__copy:last-child:before {
   content: '';
   display: block;
-}
-
-.footer__item:hover,
-.footer__copy:hover {
-  color: #4bcaff;
 }

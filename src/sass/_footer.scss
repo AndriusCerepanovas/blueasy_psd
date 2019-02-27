@@ -19,17 +19,18 @@
 		vertical-align: top;
   		position: relative;
   		transition: all 0.3s ease-in-out;
+  		&:hover {
+  			color: $text-hover;
+  		}
   			&:before {
   			content: '|';
   			position: absolute;
   			right: calc(-12px - 4px);
+  			color: $text-dark;
   		}
   		&:last-child:before {
   			content: '';
   			display: block;
-  		}
-  		&:hover {
-  			color: $text-hover;
   		}
 	}
 }	
