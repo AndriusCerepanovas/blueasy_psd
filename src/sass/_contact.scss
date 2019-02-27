@@ -1,6 +1,8 @@
 .contact {
 	padding: 80px 0;
 	color: $text-color;
+	background: url('../img/contact-bg.jpg') center no-repeat;
+	background-size: cover;
 	&__tittle {
 		margin-bottom: 50px;
 	}
