@@ -11,8 +11,8 @@ Tools, which were used:
 - SCSS
 - HTML5/CSS3 (FlexBox)
 ### Basics:
-1. ./src : source files are stored here: img/ .html/ .css/ .scss/ fonts/
-2. ./dist/ : coming soon... - all buildfiles will gathered here. 
+1. src/ : source files are stored here: img/ .html/ .css/ .scss/ fonts/
+2. dist/ : coming soon... - all buildfiles will gathered here. 
 ## Run the project
 ### I use gitbash /  download https://gitforwindows.org
 ``` bash
@@ -24,4 +24,4 @@ $ gulp
 
 # or
 $ open src/index.html / dist/.index.html
->>>>>>> cb2224561b6382d9bffe2b109db68aa26fab450b
+
