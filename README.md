@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # BLUEASY
 ## Demo
 coming soon...
