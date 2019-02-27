@@ -1,0 +1,31 @@
+.testimonials {
+	padding: 80px 0;
+	color: $text-dark;
+	background-color: $text-color;
+	&__header {
+		display: flex;
+		justify-content: space-between;
+	}
+	h2 {
+		margin: 0;
+		margin-bottom: 50px;
+	}
+	&__quote {
+		font-size: 72px;
+		line-height: 50px;
+		font-family: serif;
+		font-weight: bold;
+	}
+	&__text {
+		font-family: 'Segoe UI Light';
+		font-weight: 300;
+		font-size: 28px;
+		line-height: 50px;
+		margin-bottom: 35px;
+		&-small {
+			font-family: 'Segoe UI Bold';
+			font-weight: bold;
+			color: $text-hover;
+		}
+	}
+}

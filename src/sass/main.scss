@@ -1,0 +1,25 @@
+body {
+	background-color: #515f67;
+	font-family: 'Segoe UI', sans-serif;
+	font-size: 14px;
+}
+
+.container {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+
+@import 'segoeui';
+@import 'variables';
+@import 'snippet__tittle';
+@import 'header';
+@import 'services';
+@import 'portfolio';
+@import 'default';
+@import 'twitter';
+@import 'about';
+@import 'testimonials';
+@import 'contact';
