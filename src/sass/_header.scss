@@ -3,6 +3,7 @@ header {
 	min-height: 800px;
 	background: url('../img/hero-bg.jpg') no-repeat center top;
 	background-color: rgba(68,79,86, 0.8);
+	background-size: cover;
 }
 
 .bg {
@@ -42,9 +43,9 @@ header {
 		color: $text-color;
 		font-family: 'Segoe UI Bold';
 		font-weight: bold;
+		line-height: 24px;
 		text-transform: uppercase;
-		transition: 300ms ease-in-out;
-		line-height: 1;
+		transition: 300ms ease-in-out;	
 		&:hover {
 			color: $text-hover;
 			border-color: $text-hover;

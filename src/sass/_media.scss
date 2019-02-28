@@ -1,0 +1,317 @@
+/* Media */
+
+
+
+@media (max-width: 1200px) {
+  .default, .about, .services, .portfolio, 
+  .twitter, .testimonials, .contact{
+  	padding-top: 40px;
+  }
+  .about, .services, .portfolio, 
+  .twitter, .testimonials, .contact{
+  	padding-bottom: 40px;
+  }
+
+/* Header HERO */
+/* Services*/
+/* PORTFOLIO */
+  .portfolio__img-wrap {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  }
+  .portfolio__img-hidden {
+    display: none;
+  }
+/* Default Section */
+  .default {
+    padding-bottom: 100px;
+  }
+  .default__wrap {
+    flex-direction: column;
+    position: relative;
+  }
+  .default__video {
+    margin: auto;
+  }
+  .default__btn {
+    display: flex;
+    width: 145px;
+    height: 57px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -75px;
+    left: 50%;
+    margin-left: -74.5px;
+  }
+  .default__text {
+    margin: 0 auto 35px auto;
+    width: 90%;
+  }
+/* SECTION TWITTER */
+.twitter__text-small {
+  font-size: 24px;
+  width: 75%;
+  margin: auto;
+}
+/* SECTION About */
+.about__text_icon:last-child {
+  margin-right: 0;
+}
+/* SECTION Testimonials */
+.testimonials__text {
+  font-size: 24px;
+}
+/*  SECTION Contact */
+/*  FOOTER */  
+}
+
+
+
+
+@media (max-width: 992px) {
+  .container {
+	max-width: 962px;
+  }
+/* Header HERO */
+.menu__item {
+  font-size: 12px;
+}
+/* Services*/
+.services__block-text {
+  font-size: 11px;
+  margin-right: 25px;
+}
+/* PORTFOLIO */
+ .portfolio__item {
+  font-size: 12px;
+  margin-left: 20px;
+ }
+ .portfolio__img-wrap {
+
+  justify-content: space-around;
+ }
+ .portfolio__img {
+    margin-right: 0;
+  }
+/* Default Section */
+/* SECTION TWITTER */
+.twitter__text-small {
+  line-height: 32px;
+}
+/* SECTION About */
+.about__wrap {
+  flex-direction: column;
+}
+.about__text {
+  margin-bottom: 15px;
+}
+.about__text_icon-wrap {
+  justify-content: center;
+}
+/* SECTION Testimonials */
+.testimonials__text {
+  line-height: 32px;
+}
+/*  SECTION Contact */
+.contact__input {
+  display: block;
+  margin-bottom: 0;
+}
+.contact__text {
+  margin-bottom: 20px;
+}
+.contact__top {
+  flex-direction: column;
+}
+.contact__btn {
+  margin: auto;
+  display: block;
+}
+/*  FOOTER */   
+  .footer__item, .footer__copy {
+    font-size: 16px;
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 748px; 
+  }
+  .snippet__tittle {
+    margin-bottom: 30px;
+  }
+/* Header HERO */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 180px;
+}
+.menu {
+  display: none;
+}
+.m-menu-link {
+  display: block;
+}
+.logo-m {
+  position: absolute;
+  top: 15%;
+  left: 3%;
+}
+.bg, .header-wrap {
+  height: 80px;
+}
+/* Services*/
+.services__block {
+  display: flex;
+  width: 75%;
+  flex-direction: column;
+  margin: auto;
+  &-item img {
+    display: flex;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  &-tittle {
+    text-align: center;
+  }
+  &-text {
+    margin-bottom: 20px;
+  }
+}
+/* PORTFOLIO */
+.portfolio-wrap {
+    flex-direction: column;
+  }
+.portfolio__menu {
+  margin-top: 30px;
+  margin-bottom: -40px;
+  }
+.portfolio__item {
+    font-size: 10px;
+    margin-left: 10px;
+  }
+  .portfolio-wrap__img {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+/* Default Section */
+.default__video-frame {
+  width: 450px;
+  height: 313px;
+}
+/* SECTION TWITTER */
+/* SECTION About */
+/* SECTION Testimonials */
+/*  SECTION Contact */
+.contact__input {
+  margin: 0;
+  width: 450px;
+}
+/*  FOOTER */   
+}
+
+
+
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 450px;
+  }
+/* Header HERO */
+.hero {
+  padding-top: 110px;
+}
+.hero__quote{
+  font-size: 30px;
+  line-height: 30px;
+}
+/* Services*/
+/* PORTFOLIO */
+.portfolio__item {
+  font-size: 8px;
+  margin-left: 0;
+  padding: 5px 10px;
+}
+  .portfolio-wrap__img {
+    flex-wrap: wrap;
+  }
+/* Default Section */
+.default__video-frame {
+  width: 290px;
+}
+.default__video-frame, .default__video {
+  height: 200px;
+}
+/* SECTION TWITTER */
+.twitter__text-small {
+  font-size: 15px;
+}
+/* SECTION About */
+/* SECTION Testimonials */
+/*  SECTION Contact */
+.contact__input {
+  margin: 0;
+  width: 300px;
+}
+.contact__btn {
+  width: 280px;
+  padding: 20px 0;
+}
+/*  FOOTER */   
+  .footer__item, .footer__copy {
+    font-size: 10px;
+    margin-right: 15px;
+    &:before {
+      right: calc(-6px - 2px);
+    }
+  }
+.footer {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 300px;
+    padding: 0 10px;
+  }
+  .snippet__tittle {
+    font-size: 25px;
+  }
+/* Header HERO */
+.hero {
+  span {
+    background-color: transparent;
+  }
+}
+.hero__quote{
+  line-height: 24px;
+  font-size: 24px;
+}
+/* Services*/
+/* PORTFOLIO */
+/* Default Section */
+/* SECTION TWITTER */
+/* SECTION About */
+.about__text_icon {
+  margin-right: 10px;
+}
+/* SECTION Testimonials */
+/*  SECTION Contact */
+.contact__input{
+  width: 280px;
+}
+/*  FOOTER */  
+.contact__text-none {
+  display: none;
+}
+}
+
+
+
+

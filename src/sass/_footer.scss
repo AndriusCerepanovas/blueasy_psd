@@ -33,4 +33,7 @@
   			display: block;
   		}
 	}
+	&__copy:hover {
+		color: $text-dark;
+	}
 }	

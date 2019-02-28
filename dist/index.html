@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-<html lang="ru"> 
+<html lang="en"> 
 <head> 
 <meta charset="utf-8"> 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
@@ -21,6 +21,34 @@
 
 <body> 
 
+	<!-- m-menu -->
+	
+	<ul class="m-menu">
+		<li class="close-menu">&times;</li>
+		<li class="menu__item">
+			<a href="#" class="menu__link">Home</a>
+		</li>
+		<li class="menu__item">
+			<a href="#" class="menu__link">Services</a>
+		</li>
+		<li class="menu__item">
+			<a href="#" class="menu__link">Features</a>
+		</li>
+		<li class="menu__item">
+			<a href="#" class="menu__link">Portfolio</a>
+		</li>
+		<li class="menu__item">
+			<a href="#" class="menu__link">Contact</a>
+		</li>
+	</ul>
+
+	<!-- Hamburger media css -->
+			<a href="#" class="m-menu-link">
+				<i class="fa fa-bars"></i>
+			</a>
+
+	<!-- Header HERO -->	
+
 	<header>
 		<div class="bg">
 		<div class="container">
@@ -28,26 +56,26 @@
 				<div class="logo"><a href="#">Blu<span>e</span>asy</a></div>
 				<nav class="navigation">
 					<ul class="menu">
-						<li class="footer__item"menu__active">
-							<a href="#" class="footer__link">Home</a>
+						<li class="menu__item menu__active">
+							<a href="#" class="menu__link">Home</a>
 						</li>
-						<li class="footer__item">
-							<a href="#" class="footer__link">Services</a>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Services</a>
 						</li>
-						<li class="footer__item">
-							<a href="#" class="footer__link">Features</a>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Features</a>
 						</li>
-						<li class="footer__item">
-							<a href="#" class="footer__link">Portfolio</a>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Portfolio</a>
 						</li>
-						<li class="footer__item">
-							<a href="#" class="footer__link">Contact</a>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Contact</a>
 						</li>
 					</ul>
 				</nav>
 			</div>
 			</div>
-
+				
 			<div class="hero">
 				<blockquote class="hero__tittle">
 					<span class="hero__quote">“I’m looking for the unexpected.</span> <br>
@@ -55,6 +83,7 @@
 				</blockquote>
 			</div>
 		</div>
+
 	</header>
 
 	<!-- SERVICES -->
@@ -137,7 +166,7 @@
 					<img src="img/portfolio3.jpg" alt="photo_portfolio">
 				</div>
 
-				<div class="portfolio__img">
+				<div class="portfolio__img portfolio__img-hidden">
 					<img src="img/portfolio4.jpg" alt="photo_portfolio">
 				</div>
 			</div>
@@ -158,7 +187,7 @@
 					<img src="img/portfolio7.jpg" alt="photo_portfolio">
 				</div>
 
-				<div class="portfolio__img">
+				<div class="portfolio__img portfolio__img-hidden">
 					<img src="img/portfolio8.jpg" alt="photo_portfolio">
 				</div>
 
@@ -167,7 +196,6 @@
 			</div>
 			<!-- end portfolio-wrap__img -->
 		</div>
-	</div>
 	</section>
 
 	<!-- Default Section -->
@@ -186,7 +214,7 @@
 			<!-- end default__text -->
 			<!-- begin default__video -->
 			<div class="default__video">
-				<iframe src="https://player.vimeo.com/video/318749460" width="560" height="313" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				<iframe class= "default__video-frame" src="https://player.vimeo.com/video/318749460" width="560" height="313"></iframe>
 			</div>
 			<!-- end default__video -->
 			</div>
@@ -223,6 +251,7 @@
 			<div class="about__text-right">
 				<p class="about__text">Pudding dessert jujubes tiramisu gingerbread croissant tiramisu applicake. Sesame snaps sugar plum cotton candy chocolate bonbon lemon drops candy canes cotton candy. Cake toffee pie bear claw pastry.</p>
 				<div class="about__text_icon-wrap">
+					<ul>
 				<li class="about__text_icon">
 					<i class="fab fa-twitter"></i>
 				</li>
@@ -235,6 +264,7 @@
 				<li class="about__text_icon">
 					<i class="fa fa-coffee"></i>
 				</li>
+					</ul>
 				</div>
 			</div>
 		</div>	
@@ -261,7 +291,7 @@
 	<section class="contact">
 	<div class="container">
 		<h2 class="snippet__tittle contact__tittle">Contact</h2>
-				<form class="contact__form" action="" method="post">
+				<form class="contact__form" action="#" method="post">
 					<div class="contact__top">
 						<fieldset>
 						<label class="contact__label" for="full-name">Full Name</label> <br>
@@ -272,7 +302,7 @@
 						</fieldset>
 
 					<div class="contact__info">
-						<p class="contact__text">Jujubes bear claw croissant wafer sweet lemon drops brownie chocolate bar. Sweet lollipop halvah tootsie roll cake fruitcake. Chocolate cake chocolate bar gingerbread lollipop tart. Jujubes bear claw donut chupa chups.</p>
+						<p class="contact__text contact__text-none">Jujubes bear claw croissant wafer sweet lemon drops brownie chocolate bar. Sweet lollipop halvah tootsie roll cake fruitcake. Chocolate cake chocolate bar gingerbread lollipop tart. Jujubes bear claw donut chupa chups.</p>
 						<p class="contact__text">
 							Linda Newman<br>
 							W325 State Road 123<br>
@@ -299,7 +329,7 @@
 			<div class="footer-wrap">
 				<nav class="navigation">
 					<ul class="footer__menu">
-						<li class="footer__item"">
+						<li class="footer__item">
 							<a href="#" class="footer__link">Home</a>
 						</li>
 						<li class="footer__item">
@@ -318,5 +348,22 @@
 		</div>
 	</footer>
 
+	<script
+	src="http://code.jquery.com/jquery-3.3.1.js"></script>
+	  <script>
+	  	$(function() {
+		var link = $('.m-menu-link');
+		var close = $('.close-menu');
+		var menu = $('.m-menu');
+		link.on('click', function(event) {
+			event.preventDefault();
+			menu.toggleClass('m-menu__active');
+		});
+		close.on('click', function(event) {
+			event.preventDefault();
+			menu.toggleClass('m-menu__active');
+		});
+	});
+	  </script>
 </body> 
 </html> 

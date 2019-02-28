@@ -5,13 +5,16 @@ body {
 	font-weight: normal;
 }
 
+img {
+	max-width: 100%;
+}
+
 .container {
-	max-width: 1200px;
 	width: 100%;
+	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
-
 
 @import 'segoeui';
 @import 'variables';
@@ -25,3 +28,5 @@ body {
 @import 'testimonials';
 @import 'contact';
 @import 'footer';
+@import 'm-menu';
+@import 'media';
