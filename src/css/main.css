@@ -709,7 +709,7 @@ header {
 
 /* Media */
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .default,
   .about,
   .services,
@@ -1031,9 +1031,9 @@ header {
   /*  FOOTER */
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .container {
-    max-width: 450px;
+    max-width: 540px;
   }
 
   /* Header HERO */
