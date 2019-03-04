@@ -55,14 +55,14 @@ gulp.task('minifyhtml', () => {
 // move img
 
 gulp.task('moveimage', function(){
-   return gulp.src('src/img/*.*')
+   return gulp.src('src/img/**/*')
    .pipe(gulp.dest('./dist/img/'));
  });
 
-// пmove fonts
+// move fonts
 
 gulp.task('fonts', function() {
-    gulp.src('src/fonts/*.*')
+    gulp.src('src/fonts/**/*')
         .pipe(gulp.dest('./dist/fonts/')) // Переместим шрифты в build
 });
 
@@ -77,6 +77,7 @@ gulp.task('clean', function() {
 gulp.task('build', gulp.parallel('clean', 'minifyhtml', 'minifycss','fonts'));
 
 gulp.task('default', gulp.parallel('serve', 'sass'));
+
 
 
 
