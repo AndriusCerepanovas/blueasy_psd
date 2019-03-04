@@ -69,8 +69,11 @@ gulp.task('fonts', function() {
 // clean build
 
 gulp.task('clean', function() {
-  return del.sync('dist');
-});
+  return del.sync(['dist/**/*', '!dist/img/**'], {
+     dot: true,
+    nodir: true
+})
+   });
 
 // Build project
 
