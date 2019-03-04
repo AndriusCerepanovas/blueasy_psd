@@ -3,6 +3,10 @@ var browserSync = require('browser-sync');
 var sass        = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var concatCss = require('gulp-concat-css');
+var htmlmin = require('gulp-html-minifier');
+var cleanCSS = require('gulp-clean-css');
+var del  =  require('del');
+var htmlmin = require('gulp-htmlmin');
 
 // Static Server + watching scss/html files
 
@@ -34,4 +38,45 @@ gulp.task('sass', function() {
         .pipe(browserSync.stream());
 });
 
-gulp.task('default', gulp.parallel('serve', 'html', 'sass'));
+// minify html / css
+
+gulp.task('minifycss', () => {
+  return gulp.src('./src/css/*.css')
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(gulp.dest('./dist/css/'));
+});
+
+gulp.task('minifyhtml', () => {
+  return gulp.src('src/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('dist'));
+});
+
+// move img
+
+gulp.task('moveimage', function(){
+   return gulp.src('src/img/*.*')
+   .pipe(gulp.dest('./dist/img/'));
+ });
+
+// пmove fonts
+
+gulp.task('fonts', function() {
+    gulp.src('src/fonts/*.*')
+        .pipe(gulp.dest('./dist/fonts/')) // Переместим шрифты в build
+});
+
+// clean build
+
+gulp.task('clean', function() {
+  return del.sync('dist');
+});
+
+// Build project
+
+gulp.task('build', gulp.parallel('clean', 'minifyhtml', 'minifycss','fonts'));
+
+gulp.task('default', gulp.parallel('serve', 'sass'));
+
+
+
