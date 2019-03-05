@@ -1,6 +1,8 @@
 /* mobile menu */
 .fa-bars {
 	color: $text-hover;
+	position: fixed;
+	right: 3%;
 }
 .m-menu {
 	// padding: 0;

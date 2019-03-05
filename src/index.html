@@ -48,9 +48,8 @@
 			</a>
 
 	<!-- Header HERO -->	
-
-	<header>
-		<div class="bg">
+	<header class="content">  <!-- class for scroll  -->
+		<div class="bg" id="myHeader">
 		<div class="container">
 			<div class="header-wrap">
 				<div class="logo"><a href="#">Blu<span>e</span>asy</a></div>
@@ -73,8 +72,9 @@
 						</li>
 					</ul>
 				</nav>
-			</div>
-			</div>
+			</div>  <!-- end header-wrap -->
+			</div>  <!-- end container -->
+			</div>  <!-- end bg -->
 				
 			<div class="hero">
 				<blockquote class="hero__tittle">
@@ -82,8 +82,6 @@
 					<span class="hero__quote">I’m looking for things I’ve never seen before.“</span>
 				</blockquote>
 			</div>
-		</div>
-
 	</header>
 
 	<!-- SERVICES -->
@@ -346,22 +344,7 @@
 		</div>
 	</footer>
 
-	<script
-	src="http://code.jquery.com/jquery-3.3.1.js"></script>
-	  <script>
-	  	$(function() {
-		var link = $('.m-menu-link');
-		var close = $('.close-menu');
-		var menu = $('.m-menu');
-		link.on('click', function(event) {
-			event.preventDefault();
-			menu.toggleClass('m-menu__active');
-		});
-		close.on('click', function(event) {
-			event.preventDefault();
-			menu.toggleClass('m-menu__active');
-		});
-	});
-	  </script>
+	<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="js/main.js"></script>
 </body> 
 </html> 
