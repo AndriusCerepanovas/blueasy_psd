@@ -69,9 +69,7 @@ gulp.task('fonts', function() {
 // clean build
 
 gulp.task('clean', function() {
-  return del.sync(['dist/**/*', '!dist/img/**'], {
-     dot: true,
-    nodir: true
+  return del.sync(['dist/**', '!dist', '!dist/img/**'], { 
 })
    });
 
@@ -80,6 +78,7 @@ gulp.task('clean', function() {
 gulp.task('build', gulp.parallel('clean', 'minifyhtml', 'minifycss','fonts'));
 
 gulp.task('default', gulp.parallel('serve', 'sass'));
+
 
 
 
