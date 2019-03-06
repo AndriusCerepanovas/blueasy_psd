@@ -990,6 +990,13 @@ header {
 
   /* PORTFOLIO */
 
+  .portfolio-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
   .portfolio__menu {
     margin-top: 30px;
     margin-bottom: -40px;
@@ -1047,13 +1054,6 @@ header {
   /* Services*/
 
   /* PORTFOLIO */
-
-  .portfolio-wrap {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
 
   .portfolio__item {
     font-size: 0.8rem;

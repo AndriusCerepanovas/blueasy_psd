@@ -193,7 +193,9 @@
   }
 }
 /* PORTFOLIO */
-
+.portfolio-wrap {
+  flex-direction: column;
+}
 .portfolio__menu {
   margin-top: 30px;
   margin-bottom: -40px;
@@ -238,9 +240,6 @@
 /* Services*/
 /* PORTFOLIO */
 
-.portfolio-wrap {
-  flex-direction: column;
-}
 .portfolio__item {
   font-size: 0.8rem;
   margin-left: 0;

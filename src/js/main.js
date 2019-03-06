@@ -31,10 +31,10 @@ $(function() {
 
 $(window).on("scroll", function () {
     var scrolled = $(this).scrollTop();
-    if( scrolled > 107 ) {
+    if( scrolled > 645 ) {
         $('.content').addClass('scrolled');
     }   
-    if( scrolled <= 107 ) {     
+    if( scrolled <= 645 ) {     
         $('.content').removeClass('scrolled');
     }
 });
