@@ -7,6 +7,7 @@ var htmlmin = require('gulp-html-minifier');
 var cleanCSS = require('gulp-clean-css');
 var del  =  require('del');
 var htmlmin = require('gulp-htmlmin');
+var uglify = require('gulp-uglify');
 
 // Static Server + watching scss/html files
 
@@ -38,6 +39,7 @@ gulp.task('sass', function() {
         .pipe(browserSync.stream());
 });
 
+
 // minify html / css
 
 gulp.task('minifycss', () => {
@@ -66,6 +68,15 @@ gulp.task('fonts', function() {
         .pipe(gulp.dest('./dist/fonts/')) // Переместим шрифты в build
 });
 
+// gulp-uglify
+
+gulp.task('js', function(){
+   return gulp.src('src/js/*.js')
+   .pipe(uglify())
+   .pipe(gulp.dest('./dist/js/'));
+ });
+
+
 // clean build
 
 gulp.task('clean', function() {
@@ -75,10 +86,9 @@ gulp.task('clean', function() {
 
 // Build project
 
-gulp.task('build', gulp.parallel('clean', 'minifyhtml', 'minifycss','fonts'));
+gulp.task('build', gulp.parallel('clean', 'minifyhtml', 'minifycss', 'fonts', 'js'));
 
 gulp.task('default', gulp.parallel('serve', 'sass'));
-
 
 
 
