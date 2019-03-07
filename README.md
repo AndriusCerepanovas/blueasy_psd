@@ -1,6 +1,6 @@
 # BLUEASY
 ## Demo
-coming soon...
+https://faradeifrontend.github.io/blueasy_psd.github.io/
 ## Download PSD
 https://freebiesbug.com/psd-freebies/blueasy-psd-portfolio-template/  
 or unzip blueasy.rar
