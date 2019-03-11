@@ -6,7 +6,6 @@ var concatCss = require('gulp-concat-css');
 var htmlmin = require('gulp-html-minifier');
 var cleanCSS = require('gulp-clean-css');
 var del  =  require('del');
-var htmlmin = require('gulp-htmlmin');
 var uglify = require('gulp-uglify');
 
 // Static Server + watching scss/html files
