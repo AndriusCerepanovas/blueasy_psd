@@ -1,8 +1,6 @@
 /* mobile menu */
 .fa-bars {
 	color: $text-hover;
-	position: fixed;
-	right: 3%;
 }
 .m-menu {
 	// padding: 0;
@@ -24,9 +22,9 @@
 	&-link { /* icon hambrug */
 	display: none;
 	font-size: 3rem;
-	position: absolute;
-	top: 2%;
-	right: 5%;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-right: -10px;
 	}
 }
 
